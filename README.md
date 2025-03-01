@@ -25,7 +25,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 1. **Clone o repositório**:
 
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/carolcapitani/projetoCarol.git
 
 Instale as dependências: Navegue até a pasta do projeto e execute o comando para instalar as dependências:
 
