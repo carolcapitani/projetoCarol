@@ -26,29 +26,27 @@ Para rodar o projeto localmente, siga os passos abaixo:
 1. **Clone o repositório**:
 
    git clone https://github.com/carolcapitani/projetoCarol.git
-
-Instale as dependências: Navegue até a pasta do projeto e execute o comando para instalar as dependências:
+   
+2. **Instale as dependências** : Navegue até a pasta do projeto e execute o comando para instalar as dependências:
 
 cd nome-do-repositorio
 npm install
 Ou, se preferir, use o pnpm, yarn ou bun para instalar as dependências:
 
 pnpm install
-# ou
+ou
 yarn install
-# ou
+ou
 bun install
 
-
-Rodando o servidor de desenvolvimento: Após a instalação das dependências, execute o seguinte comando para iniciar o servidor local:
-
+3. **Rode o servidor de desenvolvimento** : Após a instalação das dependências, execute o seguinte comando para iniciar o servidor local:
 
 npm run dev
-# ou
+ou
 pnpm dev
-# ou
+ou
 yarn dev
-# ou
+ou
 bun run dev
 
 O servidor estará disponível em http://localhost:3000. Abra essa URL no seu navegador para ver o blog em funcionamento.
@@ -57,11 +55,11 @@ O servidor estará disponível em http://localhost:3000. Abra essa URL no seu na
 Para gerar a versão otimizada do seu projeto para produção, basta rodar o seguinte comando:
 
 npm run build
-# ou
+ou
 pnpm build
-# ou
+ou
 yarn build
-# ou
+ou
 bun run build
 
 Isso criará a versão de produção do seu projeto na pasta .output/
@@ -79,16 +77,34 @@ Clique em "Deploy site" e o Netlify fará o deploy do seu projeto.
 ## Estrutura do Projeto
 O projeto está estruturado da seguinte forma:
 
-├── public/                 # Arquivos públicos, como imagens
-│   └── images/             # Imagens do blog
-├── src/                    # Arquivos de código-fonte
-│   ├── assets/             # Arquivos estáticos
-│   ├── components/         # Componentes Vue reutilizáveis
-│   ├── pages/              # Páginas (contatos, carreira, vida pessoal, formação acadêmica)
-│   ├── App.vue             # Componente principal
-│   └── main.js             # Arquivo de entrada do Vue
-├── nuxt.config.js          # Arquivo de configuração do Nuxt.js
-├── tailwind.config.js      # Arquivo de configuração do TailwindCSS
-├── package.json            # Dependências e scripts do projeto
-└── README.md               # Este arquivo
-
+PROJETOCAROL/              # Diretório raiz do projeto
+├── .nuxt/                 # Diretório gerado pelo Nuxt.js para build e cache
+├── .output/               # Saída da compilação do projeto
+├── assets/                # Arquivos estáticos como estilos e imagens
+│   └── index.css          # Arquivo de estilos CSS
+├── components/            # Componentes Vue reutilizáveis
+│   ├── Carousel.vue       # Componente de carrossel
+│   ├── Footer.vue         # Componente de rodapé
+│   └── Navigation.vue     # Componente de navegação
+├── node_modules/          # Pacotes e dependências do Node.js
+├── pages/                 # Páginas do projeto
+│   ├── academic.vue       # Página sobre formação acadêmica
+│   ├── career.vue         # Página sobre carreira
+│   ├── contacts.vue       # Página de contatos
+│   ├── home.vue           # Página inicial
+│   ├── index.vue          # Página principal do projeto
+│   └── personal.vue       # Página sobre vida pessoal
+├── public/                # Arquivos públicos acessíveis diretamente
+│   ├── images/            # Diretório para armazenar imagens
+│   ├── favicon.ico        # Ícone do site
+│   ├── index.html         # Arquivo HTML principal
+│   └── robots.txt         # Arquivo para configurar rastreamento por mecanismos de busca
+├── server/                # Diretório para arquivos do servidor (não totalmente visível na imagem)
+├── .gitignore             # Arquivo para ignorar arquivos no Git
+├── App.vue                # Componente raiz do Vue.js
+├── nuxt.config.ts         # Configuração do Nuxt.js em TypeScript
+├── package-lock.json      # Arquivo de bloqueio de versões das dependências do npm
+├── package.json           # Gerenciador de dependências e scripts do projeto
+├── README.md              # Documentação do projeto
+├── tailwind.config.js     # Configuração do Tailwind CSS
+└── tsconfig.json          # Configuração do TypeScript
