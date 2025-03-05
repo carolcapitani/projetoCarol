@@ -91,6 +91,7 @@ Após gerar o build, você pode entregar o projeto em produção utilizando **Ne
 2. Na página "sites", clique em "Add new site" e depois em "Deploy manually".
 3. Clique em "Browse to upload" e selecione a pasta "\.output\public" do repositório.
 4. Clique em "Fazer upload" e o Netlify fará o deploy do seu projeto.
+5. Clique em "Open production deploy" e o Netlify irá redicionar para o site.
 
 ---
 
