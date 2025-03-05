@@ -75,16 +75,10 @@ O servidor estará disponível em **http://localhost:3000**. Abra essa URL no se
 Para gerar a versão otimizada do seu projeto para produção, execute o seguinte comando:
 
 ```sh
-npm run build
-# ou
-pnpm build
-# ou
-yarn build
-# ou
-bun run build
+npm run generate
 ```
 
-Isso criará a versão de produção do projeto na pasta **.output/**.
+Isso criará a versão de produção do projeto na pasta **.output/public**.
 
 ---
 
