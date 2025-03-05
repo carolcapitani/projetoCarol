@@ -1,6 +1,7 @@
 # Blog Pessoal com Nuxt.js
 
 Este projeto é um **Blog Pessoal** construído com **Nuxt.js**, **Vue.js** e **TailwindCSS**.
+Blog em produção: https://idyllic-hamster-4c17f3.netlify.app/home
 
 ## Objetivo do Projeto
 
@@ -87,10 +88,9 @@ Isso criará a versão de produção do projeto na pasta **.output/public**.
 Após gerar o build, você pode entregar o projeto em produção utilizando **Netlify**:
 
 1. Acesse [Netlify](https://www.netlify.com/), faça login e crie um novo site a partir do repositório Git.
-2. Na configuração de build, configure:
-   - **Build Command**: `npm run build` (ou `pnpm build`, `yarn build` ou `bun run build`)
-   - **Publish Directory**: `.output/public` (ou o diretório equivalente gerado pelo Nuxt.js).
-3. Clique em **"Deploy site"** e o Netlify fará o deploy do seu projeto.
+2. Na página "sites", clique em "Add new site" e depois em "Deploy manually":
+3. Clique em "Browse to upload" e selecione a pasta "\.output\public" do repositório
+4. Clique em "Fazer upload" e o Netlify fará o deploy do seu projeto.
 
 ---
 
